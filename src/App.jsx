@@ -1,3 +1,6 @@
+import axios from "axios";
+import { useState } from "react";
+
 function Header() {
   return (
     <div>
@@ -61,30 +64,19 @@ function Footer() {
 }
 
 function Content() {
-  let posts = [
-    {
-      id: 1,
-      title: "Cheese!",
-      body: "Assorted cheeses that you will find most delightful",
-      image: "cheese-fruits-18359800.jpg",
-    },
-    {
-      id: 2,
-      title: "Zombies!",
-      body: "Brainnnnnsssssssss",
-      image: "zombies.webp",
-    },
-    {
-      id: 3,
-      title: "Kitties!",
-      body: "Adorable cats sleeping peacefully",
-      image: "kitties.jpeg",
-    },
-  ];
+  const [posts, setPosts] = useState([]);
+
+  const handleIndexPosts = () => {
+    axios.get("http://localhost:3000/posts.json").then(function (response) {
+      console.log(response);
+      setPosts(response.data);
+    });
+  };
 
   return (
     <div>
       <PostsNew />
+      <button onClick={handleIndexPosts}>Load Posts</button>
       <PostsIndex posts={posts} />
     </div>
   );
