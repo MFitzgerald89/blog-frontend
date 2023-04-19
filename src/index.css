@@ -1,7 +1,80 @@
+#root {
+  font-family: 'Abril Fatface', cursive;
+  background-image: url(https://as2.ftcdn.net/v2/jpg/04/75/46/65/1000_F_475466521_gxMuzd4517K96Q8aEPlZK2DFBlopvH8w.jpg);
+}
+
 #posts-index img {
+  border-style: solid;
+  border-radius: 1em;
+  border-color: white;
+  position:flex;
   width: 300px;
+  opacity: .5;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+
+}
+#posts-index img:hover {
+  position: flex;
+  border-style: solid;
+  border-radius: 1em;
+  border-color: black;
+  opacity: 1.0;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #0b0b0b;
+  background-image: url(https://media.istockphoto.com/id/1355531876/vector/newspaper-paper-grunge-vintage-old-aged-texture-background.webp?s=612x612&w=is&k=20&c=tjA450QQ_7Xyaf7J-2oLjpceAXj-6N6j4pYVnshNDBo=);
+  border-radius: 1em;
+  border-style: solid;
+  border-color:black;
+  overflow: hidden;
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 1s ease-in-out;
+}
+
+nav a:hover {
+  background-color: rgba(250, 238, 219, 0.763);
+}
+
+nav a.active {
+  background-color: hidden;
 }

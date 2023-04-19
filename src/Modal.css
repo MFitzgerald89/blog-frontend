@@ -7,15 +7,23 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
+  -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
 }
 
 .modal-main {
   position:fixed;
-  background: white;
-  width: 80%;
+  background: aquamarine;
+  border-color: aqua;
+  border-radius: 1em;
+  border-style: groove;
+  width: 75%;
   height: auto;
   top:50%;
   left:50%;
+  bottom: 0;
   transform: translate(-50%,-50%);
   padding: 1em;
 }
