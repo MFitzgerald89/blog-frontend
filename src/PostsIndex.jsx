@@ -2,15 +2,23 @@ export function PostsIndex(props) {
   console.log(props);
   return (
     <div id="posts-index">
-      <h1>All posts</h1>
-      {props.posts.map((post) => (
-        <div key={post.id} className="posts">
-          <h2>{post.title}</h2>
-          <img src={post.image} />
-          <p>{post.body}</p>
-          <button onClick={() => props.onShowPost(post)}>More Info!</button>
-        </div>
-      ))}
+      <h1>All Posts</h1>
+      <div className="row">
+        {props.posts.map((post) => (
+          <div key={post.id} className="posts col mb-3">
+            <div className="card">
+              <img src={post.image_url} className="card-img-top" />
+              <div className="card-body">
+                <h2 className="card-title">{post.title}</h2>
+                <p className="card-text">{post.chef}</p>
+                <button className="btn btn-primary" onClick={() => props.onShowpost(post)}>
+                  More Info!
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

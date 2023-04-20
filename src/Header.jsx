@@ -26,12 +26,12 @@ export function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#recipes-index" style={{ color: "darkred" }}>
+                <a className="nav-link" href="#posts-index" style={{ color: "darkred" }}>
                   All Posts
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#recipes-new" style={{ color: "darkred" }}>
+                <a className="nav-link" href="#posts-new" style={{ color: "darkred" }}>
                   New Post
                 </a>
               </li>

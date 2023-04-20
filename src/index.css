@@ -79,7 +79,18 @@ nav a.active {
   background-color: hidden;
 }
 
+.card-img-top{
+  height: 250px;
+  width: 100%;
+  object-fit: flex;
+}
+
 div h1{
+  color: darkred;
+  text-shadow: 1px 1px 1px black;
+}
+
+div h2{
   color: darkred;
   text-shadow: 1px 1px 1px black;
 }
