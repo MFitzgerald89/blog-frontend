@@ -78,3 +78,8 @@ nav a:hover {
 nav a.active {
   background-color: hidden;
 }
+
+div h1{
+  color: darkred;
+  text-shadow: 1px 1px 1px black;
+}
