@@ -6,7 +6,8 @@
 }
 
 .card {
-  padding: 2em;
+  padding: auto;
+  display: flex;
 }
 
 .read-the-docs {

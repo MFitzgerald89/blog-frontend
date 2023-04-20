@@ -5,8 +5,9 @@
 
 #posts-index img {
   border-style: solid;
-  border-radius: 1em;
+  border-radius: 0.25em;
   border-color: white;
+  background-color: tan;
   position:flex;
   width: 300px;
   opacity: .5;
@@ -20,7 +21,7 @@
 #posts-index img:hover {
   position: flex;
   border-style: solid;
-  border-radius: 1em;
+  border-radius: .25;
   border-color: black;
   opacity: 1.0;
   -webkit-filter: grayscale(0%);
@@ -83,6 +84,10 @@ nav a.active {
   height: 250px;
   width: 100%;
   object-fit: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  display: block;
 }
 
 div h1{
