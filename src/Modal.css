@@ -15,8 +15,8 @@
 
 .modal-main {
   position:fixed;
-  background: aquamarine;
-  border-color: aqua;
+  background: rgb(241, 244, 241);
+  border-color: rgb(244, 247, 247);
   border-radius: 1em;
   border-style: groove;
   width: 75%;
@@ -35,4 +35,21 @@
   position: absolute;
   top: 0em; 
   right: 0.2em;
+}
+
+.btn {
+  background-image: radial-gradient(rgb(245, 229, 191), rgb(246, 216, 151));
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-quill-pen-with-inkwell_53876-111384.jpg?w=740&t=st=1682042558~exp=1682043158~hmac=d36c46609b9266d8c16a3c4f0d4b0d3303260a4ee56f4334e5cd2ef494f907c7); 
+  background-size: contain;
+  color: black;
+  border: solid;
+  border-color: black;
+}
+.btn.btn-primary:hover {
+  color: black;
+  border-color: black;
 }

@@ -1,8 +1,14 @@
-export function PostsNew() {
+export function PostsNew(props) {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const params = new FormData(event.target);
+    console.log("handleSubmit");
+    props.onCreatePost(params);
+  };
   return (
     <div id="posts-new">
       <h1>New post</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           Title:
           <input type="text" name="title" />
@@ -15,7 +21,7 @@ export function PostsNew() {
           <div id="posts-image">
             <label>
               Image:
-              <button>Choose File</button>
+              <input type="text" name="image"></input>
             </label>
           </div>
           <button>Submit</button>
