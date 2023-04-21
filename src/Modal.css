@@ -37,8 +37,11 @@
   right: 0.2em;
 }
 
-.btn {
+button.btn {
   background-image: radial-gradient(rgb(245, 229, 191), rgb(246, 216, 151));
+}
+
+button.btn:hover {
   border-color: black;
 }
 
