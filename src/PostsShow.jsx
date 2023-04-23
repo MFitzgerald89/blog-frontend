@@ -7,11 +7,19 @@ export function PostsShow(props) {
     props.onUpdatePost(params, props.post.id);
     event.target.reset();
   };
+
+  const handleClick = () => {
+    props.onDeletePost(props.post);
+  };
+
   return (
     <div>
       <h2>{props.post.title}</h2>
       <p>Body: {props.post.body}</p>
       <p>Image: {props.post.image}</p>
+      <button class="btn btn-danger" onClick={handleClick}>
+        Delete
+      </button>
 
       <h2>Edit Post</h2>
       <form onSubmit={handleSubmit}>
