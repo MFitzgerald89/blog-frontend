@@ -1,6 +1,8 @@
 #root {
   font-family: 'Abril Fatface', cursive;
-  background-image: url(https://as2.ftcdn.net/v2/jpg/04/75/46/65/1000_F_475466521_gxMuzd4517K96Q8aEPlZK2DFBlopvH8w.jpg);
+  background-image: url(https://media.istockphoto.com/id/1084659484/photo/newspaper-with-old-grunge-vintage-unreadable-paper-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=S0eVDOemrmzPHCBxMiMexmuIjwKAUTx70w8eFtzPDqg=);
+  min-height: 100vh;
+  height: 100%
 }
 
 #posts-index img {

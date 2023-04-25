@@ -36,7 +36,7 @@ export function Login() {
           <li key={error}>{error}</li>
         ))}
       </ul>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <div>
           Email: <input name="email" type="email" />
         </div>
@@ -44,6 +44,19 @@ export function Login() {
           Password: <input name="password" type="password" />
         </div>
         <button type="submit">Login</button>
+      </form> */}
+      <form onSubmit={handleSubmit}>
+        <div class="row">
+          <div class="col">
+            <input name="email" type="email" class="form-control" placeholder="Email" />
+          </div>
+          <div class="col">
+            <input name="password" type="password" class="form-control" placeholder="Password" />
+          </div>
+        </div>
+        <button class="button" type="submit">
+          Sign In
+        </button>
       </form>
     </div>
   );
