@@ -1,3 +1,5 @@
+import { BlogShowPage } from "./BlogShowPage";
+
 export function PostsIndex(props) {
   console.log(props);
   return (
