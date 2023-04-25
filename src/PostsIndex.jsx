@@ -1,4 +1,4 @@
-import { BlogShowPage } from "./BlogShowPage";
+import { Link } from "react-router-dom";
 
 export function PostsIndex(props) {
   console.log(props);
@@ -16,6 +16,7 @@ export function PostsIndex(props) {
                 <button className="btn btn-primary" onClick={() => props.onShowPost(post)}>
                   More Info!
                 </button>
+                <Link to={`/posts/${post.id}`}>Blog Page</Link>
               </div>
             </div>
           </div>

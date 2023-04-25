@@ -9,7 +9,7 @@ import { PostsShow } from "./PostsShow";
 import { SignUp } from "./SignUp";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
-// import { BlogShowPage } from "./BlogShowPage";
+import { BlogShowPage } from "./BlogShowPage";
 
 export function Content() {
   const [posts, setPosts] = useState([]);
@@ -71,10 +71,7 @@ export function Content() {
         <Route path="/login" element={<Login />} />
         <Route path="posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         <Route path="/posts" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
-        {/* <Route
-          path="/posts/:id"
-          element={<BlogShowPage post={currentPost} onUpdatePost={handleUpdatePost} onDeletePost={handleDeletePost} />}
-        /> */}
+        <Route path="/posts/:id" element={<BlogShowPage />} />
       </Routes>
       <LogoutLink />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
