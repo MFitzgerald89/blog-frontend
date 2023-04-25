@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { BlogShowPage } from "./BlogShowPage";
 
 export function PostsIndex(props) {
   console.log(props);

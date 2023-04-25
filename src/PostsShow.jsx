@@ -17,7 +17,7 @@ export function PostsShow(props) {
       <h2>{props.post.title}</h2>
       <p>Body: {props.post.body}</p>
       <p>Image: {props.post.image}</p>
-      <button class="btn btn-danger" onClick={handleClick}>
+      <button class="button" onClick={handleClick}>
         Delete
       </button>
 
