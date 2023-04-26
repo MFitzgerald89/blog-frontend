@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import "./SignUp.scoped.scss";
 
 export function SignUp() {
   const [errors, setErrors] = useState([]);
+  const [status, setStatus] = useState(null);
+  const [name, setName] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,7 +26,7 @@ export function SignUp() {
 
   return (
     <div id="signup">
-      <h1>Signup</h1>
+      <h1>Sign Up</h1>
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
@@ -31,18 +34,29 @@ export function SignUp() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input name="name" type="text" />
+          Name:{" "}
+          <input
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            name="name"
+            type="text"
+            class="form-control"
+          />
         </div>
-        <div>
-          Email: <input name="email" type="email" />
+        <div id="email">
+          Email: <input name="email" type="email" class="form-control" />
         </div>
-        <div>
-          Password: <input name="password" type="password" />
+        <div id="password">
+          Password: <input name="password" type="password" class="form-control" />
         </div>
-        <div>
-          Confirm Password: <input name="password_confirmation" type="password" />
+        <div id="confirm_password">
+          Confirm Password: <input name="password_confirmation" type="password" class="form-control" />
         </div>
-        <button type="submit">Signup</button>
+        <div id="button">
+          <button className="mt-4 mb-4" class="btn btn-primary" type="submit">
+            Sign Up
+          </button>
+        </div>
       </form>
     </div>
   );

@@ -8,6 +8,7 @@ if (jwt) {
 
 export function Login() {
   const [errors, setErrors] = useState([]);
+  const [name, setName] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -50,6 +51,7 @@ export function Login() {
           <div class="col">
             <input name="email" type="email" class="form-control" placeholder="Email" />
           </div>
+          <small>{35 - name.length} characters remaining</small>
           <div class="col">
             <input name="password" type="password" class="form-control" placeholder="Password" />
           </div>
